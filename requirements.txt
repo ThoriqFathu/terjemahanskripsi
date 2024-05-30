@@ -1,3 +1,3 @@
 streamlit==1.27.2
 pandas==2.1.1
-cobastem==1.0.2
+mecs==1.0.5
