@@ -1543,16 +1543,16 @@ myresult = pd.read_csv(
 for data in myresult:
     kamus[data[1]] = [data[2], data[3], data[4], data[5], data[6]]
 
-data = pd.read_csv(
-    "data-desa.txt",
-    sep=",",
-    names=["id", "id_", "nama"],
-)
 # data = pd.read_csv(
-#     "https://raw.githubusercontent.com/ThoriqFathu/skripsi/main/data-desa.txt",
+#     "data-desa.txt",
 #     sep=",",
 #     names=["id", "id_", "nama"],
 # )
+data = pd.read_csv(
+    "https://raw.githubusercontent.com/ThoriqFathu/skripsi/main/data-desa.txt",
+    sep=",",
+    names=["id", "id_", "nama"],
+)
 V_Geo = data["nama"].str.upper().values
 V_Preposition = ["è", "è", "ka", "ḍâ'", "neng", "ḍâri", "sampè"]
 V_Loc = [
